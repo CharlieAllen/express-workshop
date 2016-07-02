@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/CharlieAllen/express-workshop/issues"
   },
-  "homepage": "https://github.com/CharlieAllen/express-workshop#readme"
+  "homepage": "https://github.com/CharlieAllen/express-workshop#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
