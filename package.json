@@ -1,0 +1,19 @@
+{
+  "name": "charlie",
+  "version": "1.0.0",
+  "description": "nodegirls workshop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieAllen/express-workshop.git"
+  },
+  "author": "charlie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlieAllen/express-workshop/issues"
+  },
+  "homepage": "https://github.com/CharlieAllen/express-workshop#readme"
+}
