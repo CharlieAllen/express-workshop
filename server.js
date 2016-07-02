@@ -7,12 +7,21 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 var fs = require('fs');
 
+app.get("/show-posts", function(req, res){
+  console.log("/show-posts");
+  fs.readFile(__dirname + '/data/posts.json', function(err, file){
+    console.log(file.toString()); 
+    var parsedFile = JSON.parse(file);
+    res.send(parsedFile);
+  });
+});
+
 app.post("/create-post", function(req, res){
   // console.log("/create-post");
   console.log(req.body);
-    fs.writeFile('data/posts.json', req.body.blogpost, function(err){
-    console.log(err);
-  });
+    fs.writeFile(__dirname + '/data/posts.json', req.body.blogpost, function(err){
+    //console.log(err);
+    });
   res.redirect('/');
 });
 
